@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Title feel (you can add h1 later) */
+body::before {
+  content: "📝 My Notes App";
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Input box */
+#noteinput {
+  width: 100%;
+  max-width: 500px;
+  height: 120px;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  resize: none;
+}
+
+/* Add button */
+#addBtn {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #00c9ff;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#addBtn:hover {
+  transform: scale(1.05);
+}
+
+/* Notes container */
+#notesContainer {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Each note card */
+#notesContainer p {
+  background: white;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+#notesContainer p:hover {
+  transform: translateY(-3px);
+}
+
+/* Delete button */
+#notesContainer button {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#notesContainer button:hover {
+  background: #e60000;
+  transform: scale(1.1);
+}
+
+h1{
+  color: #0e0c0c;
+  font-weight: 20;
+  font-size: 100%;
+ margin-right: 15%;
+}
